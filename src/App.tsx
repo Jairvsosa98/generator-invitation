@@ -6,8 +6,8 @@ function App() {
   const [numPasses, setNumPasses] = useState('');
   const [nameX, setNameX] = useState(320);
   const [nameY, setNameY] = useState(615);
-  const [passesX, setPassesX] = useState(385);
-  const [passesY, setPassesY] = useState(718);
+  const [passesX, setPassesX] = useState(490);
+  const [passesY, setPassesY] = useState(523);
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
@@ -28,7 +28,7 @@ function App() {
       // Draw passes
       ctx.font = 'bold 36px "Times New Roman"';
       ctx.fillStyle = 'gold';
-      const label = 'N° PASES: ';
+      const label = '';
       ctx.fillText(label, passesX, passesY);
       const labelWidth = ctx.measureText(label).width;
       ctx.fillStyle = 'black';
